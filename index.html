@@ -1,199 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jacob Hotel & Spa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Jacob Hotel & Spa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333;
-            line-height: 1.8;
-        }
+<style>
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.8;
+}
 
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #f5f5f5;
-        }
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+.hero h1 {
+    font-size: 44px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
 
-        header p {
-            font-size: 18px;
-            font-style: italic;
-        }
+.hero p {
+    font-size: 20px;
+    font-style: italic;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+/* ===== NAV ===== */
+nav {
+    margin-top: 25px;
+}
 
-        h2 {
-            color: #1f3c88;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        ul {
-            list-style-type: square;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        .amenity {
-            margin-bottom: 25px;
-        }
+/* ===== SECTIONS ===== */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+h2 {
+    text-align: center;
+    color: #1f3c88;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
 
-        table, th, td {
-            border: 1px solid #ccc;
-        }
+/* ===== CARDS ===== */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
 
-        th, td {
-            padding: 12px;
-            text-align: center;
-        }
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
 
-        th {
-            background-color: #f0f0f0;
-        }
+/* ===== IMAGES ===== */
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 
-        footer {
-            background-color: #f5f5f5;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        a {
-            color: #1f3c88;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #1f3c88;
+    color: white;
+}
+
+/* ===== DEALS ===== */
+.deal {
+    background: linear-gradient(135deg, #1f3c88, #3f6ad8);
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #1f3c88;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Jacob Hotel & Spa</h1>
-    <p>Relaxation, Reimagined — where refined comfort meets island elegance.</p>
-</header>
+    <p>Relaxation, Reimagined — A Refined Island Escape</p>
 
-<section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#deals">Deals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
     <h2>About the Resort</h2>
-    <p>
-        Jacob Hotel & Spa is an elegant three-star retreat located along the pristine shores of Monk Street Beach in St. Catherine. Designed for guests who appreciate refined comfort and tranquil surroundings, the resort offers a peaceful escape where nature and modern hospitality blend seamlessly.
-    </p>
-
-    <p>
-        The resort features 20 tastefully designed rooms offering breathtaking Ocean View, serene Garden View, and relaxing Sky View accommodations. Each space is thoughtfully created to promote rest, privacy, and relaxation.
-    </p>
-
-    <p>
-        Guests are invited to unwind by the sparkling swimming pool, indulge in rejuvenating spa treatments, and enjoy local and international cuisine. With complimentary Wi-Fi, attentive service, and a secure environment, every stay is crafted to be memorable and effortlessly luxurious.
-    </p>
+    <div class="card">
+        <p>
+            Jacob Hotel & Spa is an elegant three-star retreat located along the pristine
+            shores of Monk Street Beach in St. Catherine. Designed for guests who value
+            refined comfort and tranquil surroundings, the resort blends natural beauty
+            with modern hospitality.
+        </p>
+        <p>
+            Our 20 tastefully designed rooms offer breathtaking Ocean View, serene Garden
+            View, and calming Sky View accommodations, each created to promote rest,
+            privacy, and relaxation.
+        </p>
+    </div>
 </section>
 
-<section>
+<!-- ROOMS -->
+<section id="rooms">
     <h2>Our Accommodations</h2>
-    <ul>
-        <li><strong>Ocean View Rooms:</strong> Wake up to panoramic sea views and refreshing ocean breezes.</li>
-        <li><strong>Garden View Rooms:</strong> Enjoy peaceful surroundings overlooking lush tropical gardens.</li>
-        <li><strong>Sky View Rooms:</strong> A quiet elevated retreat offering calming views and serenity.</li>
-    </ul>
+    <div class="grid">
+        <div class="card">
+            <img src="garden.jpg" alt="Ocean View Room">
+            <h3>Ocean View</h3>
+            <p>Wake to stunning sea views and soothing ocean breezes.</p>
+        </div>
+        <div class="card">
+            <img src="garden.jpg" alt="Garden View Room">
+            <h3>Garden View</h3>
+            <p>Surrounded by lush greenery for a peaceful retreat.</p>
+        </div>
+        <div class="card">
+            <img src="garden.jpg" alt="Sky View Room">
+            <h3>Sky View</h3>
+            <p>An elevated escape offering calm and breathtaking views.</p>
+        </div>
+    </div>
 </section>
 
+<!-- PRICING -->
 <section>
-    <h2>Room Costs (per night)</h2>
-    <p>Our room rates reflect the comfort, quality, and exclusive experience offered at Jacob Hotel & Spa.</p>
-
-    <table>
-        <tr>
-            <th>Room Type</th>
-            <th>Ocean View</th>
-            <th>Garden View</th>
-            <th>Sky View</th>
-        </tr>
-        <tr>
-            <td>Single</td>
-            <td>$4,000</td>
-            <td>$4,000</td>
-            <td>$8,300</td>
-        </tr>
-        <tr>
-            <td>Double</td>
-            <td>$6,000</td>
-            <td>$4,900</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>Family (2–5)</td>
-            <td>$8,050</td>
-            <td>$5,700</td>
-            <td>—</td>
-        </tr>
-    </table>
+    <h2>Room Costs (Per Night)</h2>
+    <div class="card">
+        <table>
+            <tr>
+                <th>Occupancy</th>
+                <th>Ocean View</th>
+                <th>Garden View</th>
+                <th>Sky View</th>
+            </tr>
+            <tr>
+                <td>Single</td>
+                <td>$4,000</td>
+                <td>$4,000</td>
+                <td>$3,800</td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>$6,000</td>
+                <td>$4,900</td>
+                <td>$5,300</td>
+            </tr>
+            <tr>
+                <td>Family</td>
+                <td>$8,050</td>
+                <td>$5,700</td>
+                <td>$6,500</td>
+            </tr>
+        </table>
+    </div>
 </section>
 
-<section>
+<!-- AMENITIES -->
+<section id="amenities">
     <h2>Amenities</h2>
-
-    <div class="amenity">
-        <strong>Swimming Pool</strong>
-        <p>Relax in our sparkling outdoor pool surrounded by tropical landscaping.</p>
-    </div>
-
-    <div class="amenity">
-        <strong>Spa Services</strong>
-        <p>Rejuvenate with massages and treatments designed for ultimate relaxation.</p>
-    </div>
-
-    <div class="amenity">
-        <strong>Restaurant & Bar</strong>
-        <p>Enjoy local and international cuisine paired with signature drinks.</p>
-    </div>
-
-    <div class="amenity">
-        <strong>Complimentary Wi-Fi</strong>
-        <p>Stay connected throughout the property at no additional cost.</p>
+    <div class="grid">
+        <div class="card">
+            <img src="pool.jpg" alt="Swimming Pool">
+            <h3>Swimming Pool</h3>
+            <p>Relax in our sparkling outdoor pool surrounded by tropical beauty.</p>
+        </div>
+        <div class="card">
+            <img src="spa.jpg" alt="Spa Services">
+            <h3>Spa Services</h3>
+            <p>Indulge in rejuvenating treatments designed for total relaxation.</p>
+        </div>
+        <div class="card">
+            <img src="restaurant.jpg" alt="Restaurant and Bar">
+            <h3>Restaurant & Bar</h3>
+            <p>Enjoy expertly prepared local and international cuisine.</p>
+        </div>
     </div>
 </section>
 
-<section>
+<!-- DEALS -->
+<section id="deals">
     <h2>Exclusive Deals</h2>
-
-    <p><strong>Ocean View Double Escape</strong><br>
-    $6,000 per night with a 10% discount on weekend bookings.</p>
-
-    <p><strong>Garden View Family Retreat</strong><br>
-    $5,700 per night including complimentary breakfast for four.</p>
+    <div class="deal">
+        <h3>Ocean View Double Escape</h3>
+        <p>$6,000 per night with a 10% weekend discount.</p>
+    </div>
+    <div class="deal">
+        <h3>Garden View Family Retreat</h3>
+        <p>$5,700 per night including complimentary breakfast.</p>
+    </div>
 </section>
 
-<section>
-    <h2>Book Your Stay</h2>
-    <p>
-        Begin your journey to relaxation and refined comfort.  
-        Our reservations team is ready to assist you in planning an unforgettable stay.
-    </p>
-</section>
-
-<section>
-    <h2>Contact Information</h2>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
     <p>Email: <a href="mailto:info@jacobhotel.com">info@jacobhotel.com</a></p>
-    <p><a href="#">View Our Digital Brochure</a></p>
+    <p><a href="BROCHURE.pdf" target="_blank">View Our Digital Brochure</a></p>
 </section>
 
 <footer>
